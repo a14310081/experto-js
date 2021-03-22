@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Sistema Experto</title>
+</head>
+<body>
+  <br><br>
+  <h1>Sistema Experto</h1>
+  <div class="grid">
+    <div class="card">
+      <p id="question">¿El objeto tiene <b id="object">__param__</b>?</p>
+    </div>
+    <div id="status" style="display:none;">
+      <p id="ac" style="margin: 0 0 10px 0">Aceptados: __param__</p>
+      <p id="rc" style="margin: 0">Rechazados: __param__</p>
+    </div>
+
+    <div class="decision">
+      <a id="object-yes">Sí</a>
+      <a id="object-no">No</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

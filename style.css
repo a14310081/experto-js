@@ -1,0 +1,59 @@
+html{
+  text-align: center;
+  --dark-color: #434343;
+  --pass-color: green;
+  --error-color: red; 
+  --warn-color: yellow;
+}
+body{
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: var(--dark-color);
+}
+.grid{
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+}
+.card{
+  color: var(--dark-color);
+  background: #fff;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 19px -6px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 2px 19px -6px rgba(0,0,0,0.61);
+  box-shadow: 0px 2px 19px -6px rgba(0,0,0,0.61);
+}
+.desision a{
+  border-radius: 10px;
+}
+#object-yes{
+  cursor: pointer;
+  color: var(--pass-color);
+  background: transparent;
+  padding: 5px 15px;
+  margin-right: 10px;
+  transition: ease-in .2s;
+  border: 3px solid var(--pass-color);
+}
+#object-yes:hover{
+  color: #fff;
+  border-radius: 10px;
+  background: var(--pass-color);
+}
+#object-no{
+  cursor: pointer;
+  color: var(--error-color);
+  background: transparent;
+  padding: 5px 15px;
+  margin-right: 10px;
+  transition: ease-in .2s;
+  border: 3px solid var(--error-color);
+}
+#object-no:hover{
+  color: #fff;
+  border-radius: 10px;
+  background: var(--error-color);
+}
